@@ -1,0 +1,74 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            display : flex;
+            align-items : center;
+            justify-content: center;
+        }
+        .container{
+            display:flex;
+            flex-direction:column;
+            width: 800px;
+            border: 1px solid gray;
+        }
+        header{
+            border-bottom:1px solid gray;
+            padding-left:20px;
+        }
+        footer{
+            border-top:1px solid gray;
+            padding-left:20px;
+            text-align : center;
+        }
+        .content{
+            display:flex;
+        }
+        .content nav{
+            border-right : 1px solid gray;
+        }
+        .content aside{
+            border-left:1px solid gray;
+        }
+        nav, aside{
+            flex-basis:150px;
+            flex-shrink : 0;
+        }
+        main {
+            padding : 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>생활코딩</h1>
+        </header>
+        <section class ="content">
+            <nav>
+                <ul>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>java</li>
+                </ul>
+            </nav>
+            <main>
+                생활코딩은 일반인을 위한 코딩수업입니다.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident necessitatibus magni nesciunt nulla quis explicabo, cum, ex amet rerum non nisi officiis autem fugiat! Commodi similique voluptatem quos, amet laborum.
+                생활코딩은 일반인을 위한 코딩수업입니다.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident necessitatibus magni nesciunt nulla quis explicabo, cum, ex amet rerum non nisi officiis autem fugiat! Commodi similique voluptatem quos, amet laborum.
+                <p>
+                    생활코딩은 일반인을 위한 코딩수업입니다.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident necessitatibus magni nesciunt nulla quis explicabo, cum, ex amet rerum non nisi officiis autem fugiat! Commodi similique voluptatem quos, amet laborum.
+                </p>
+            </main>
+            <aside>AD부분</aside>
+        </section>
+        <footer>
+            <a href="#">홈페이지</a>
+        </footer>
+    </div>
+</body>
+</html>
