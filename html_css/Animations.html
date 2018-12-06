@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animations</title>
+</head>
+<style>
+    .box
+    {
+        width : 100px;
+        height : 100px;
+        background : red;
+        animation : 5s scaleAndRotateSquare ease-in-out;
+    }
+    @keyframes scaleAndRotateSquare
+    {
+        /* from , to instead of 0% - 50% - 100%  */
+        0%
+        {
+            transform : none;
+        }
+        50%
+        {
+            transform : rotate(1turn) scale(0.25, 0.25);
+            color : white;
+            text-align : center;
+        }
+        100%
+        {
+            transform : none;
+        }
+    }
+</style>
+<body>
+    <div class="box">MH</div>
+</body>
+</html>
