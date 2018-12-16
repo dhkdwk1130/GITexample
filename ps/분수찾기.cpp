@@ -20,30 +20,16 @@ int main()
 	{
 		dx = 1;
 		dy = i;
-		for(int j = i; j>= 1; j--)
-		{
-			sum++;
-			if(sum == x)
-			{
-				printf("%d/%d\n",dx,dy);		
-				break;
-			}
-			dx++;
-			dy--;
-		}
+		sum = x - sum;
+		dx = dx + (sum-1);
+		dy = dy - (sum-1);
+		printf("%d/%d\n",dx,dy);		
 	}
 	else
 	{
-		for(int j = i; j>=1; j--)
-		{
-			sum++;
-			if(sum == x)
-			{
-				printf("%d/%d\n",dx,dy);
-				break;
-			}
-			dx--;
-			dy++;
-		}
+		sum = x-sum;
+		dx= dx - (sum-1);
+		dy = dy + (sum-1);
+		printf("%d/%d\n",dx,dy);		
 	}	
 }
