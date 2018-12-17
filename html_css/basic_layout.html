@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>basic layout</title>
+  </head>
+  <style>
+    *{
+      padding : 0;
+      margin : 0;
+    }
+   header{
+     height: 50px;
+     text-align : center;
+   }
+   section{
+     height : 100%;
+   }
+   .left-section
+   {
+     height : 500px;
+     float: left;
+     margin-right : 100px;
+     background-color:red;
+   }
+   .right-section
+   {
+     height : 500px;
+
+     background-color:blue;
+   }
+   .right-section:after
+   {
+     height : 500px;
+
+     clear:both;
+   }
+  footer{
+    background-color :green;
+    height : 200px;
+  }
+  </style>
+  <body>
+    <header>
+        <h1>Hello</h1>
+    </header>
+    <section>
+    <div class="left-section">
+      <h2>this is left</h2>
+    </div>
+      <div class="right-section">
+        <h2>this is right</h2>
+      </div>
+    </section>
+    <footer>
+        <h2>this is footer
+    </footer>
+  </body>
+</html>
