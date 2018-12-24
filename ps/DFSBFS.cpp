@@ -46,9 +46,9 @@ void bfs(int s)
 }
 int main()
 {
-	int s;
+	int k;
 	int a, b;
-	cin >> N >> M >> s;
+	cin >> N >> M >> k;
 	for (int i = 0; i < M; i++)
 	{
 		cin >> a >> b;
@@ -59,8 +59,8 @@ int main()
 	{
 		sort(v[i].begin(), v[i].end());
 	}
-	dfs(s);
+	dfs(k);
 	memset(visit, 0, sizeof(visit));
 	printf("\n");
-	bfs(s);
+	bfs(k);
 }
