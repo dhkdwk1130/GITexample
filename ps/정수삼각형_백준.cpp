@@ -46,3 +46,49 @@ int main()
 	}
 	printf("%d",Max2);
 }
+
+//정수삼각형 for문 dp버전 
+//#include<iostream>
+//using namespace std;
+//int d[501][501];
+//int a[501][501];
+//int main()
+//{
+//	int n,m = -1;
+//	scanf("%d",&n);
+//	for(int i = 0 ;i <n; i++)
+//	{
+//		for(int j = 0; j<=i; j++)
+//		{
+//			scanf("%d",&a[i][j]);
+//		}
+//	}
+//	d[0][0] = a[0][0];
+//	for(int i = 1; i<n; i++)
+//	{
+//		for(int j = 0; j<=i; j++)
+//		{
+//			if(j == 0)
+//			{
+//				d[i][j] = d[i-1][0] + a[i][0];
+//				continue;
+//			}
+//			if(i == j)
+//			{
+//				d[i][j] = d[i-1][j-1] + a[i][j];
+//			}
+//			else
+//			{
+//				d[i][j] = max(d[i-1][j], d[i-1][j-1]) + a[i][j];
+//			}
+//		}
+//	}
+//	for(int i = 0; i<n; i++)
+//	{
+//		if(m < d[n-1][i])
+//		{
+//			m = d[n-1][i];
+//		}
+//	}
+//	printf("%d",m);
+//}
