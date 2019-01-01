@@ -5,7 +5,7 @@ int N;
 void solve(int sum, int sign, int num, int n, string str)
 {
 	//1부터 N까지 숫자를 3가지연산을 해서 0으로 되는 식을 모두 출력하는 함수
-	if (n == N)
+	if (n == N) 
 	{
 		sum += (num * sign);
 		if (sum == 0)
