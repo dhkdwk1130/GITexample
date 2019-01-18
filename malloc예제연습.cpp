@@ -5,6 +5,7 @@ int main()
 	scanf("%d %d", &q, &p);
 	while (r != 0)
 	{
+		//
 		r = p % q;
 		p = q;
 		q = r;
